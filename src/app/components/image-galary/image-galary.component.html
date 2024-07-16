@@ -1,0 +1,33 @@
+<section class="client_section layout_padding" id="image_galary">
+    <div class="container">
+      <div class="heading_container heading_center psudo_white_primary mb_45">
+        <h2>
+         Image <span>Galary</span>
+        </h2>
+      </div>
+      <div class="carousel-wrap">
+        <owl-carousel-o [options]="carouselOptions">
+          <ng-container *ngFor="let client of clients">
+            <ng-template carouselSlide>
+              <div class="item">
+                <div class="box">
+                  
+                  <div class="detail-box">
+                    <img [src]="client.image" alt="" class="" height="auto" width="350px">
+
+                    <div class="client_id">
+                      <div class="client_info">
+
+                      </div>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </ng-container>
+        </owl-carousel-o>
+      </div>
+    </div>
+  </section>
+  

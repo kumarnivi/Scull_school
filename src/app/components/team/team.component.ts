@@ -12,8 +12,8 @@ export class TeamComponent {
 
   teamMembers: TeamMember[] = [
     {
-      name: 'Joseph Brown',
-      role: 'Marketing Head',
+      name: 'Daniel Saimanral',
+      role: 'Managing Director',
       image: 'assets/images/team-1.jpg',
       socialLinks: {
         facebook: '#',
@@ -24,8 +24,8 @@ export class TeamComponent {
       }
     },
     {
-      name: 'Nancy White',
-      role: 'Marketing Head',
+      name: 'Ganasegaran Thugitha',
+      role: 'Secretary',
       image: 'assets/images/team-2.jpg',
       socialLinks: {
         facebook: '#',
@@ -36,8 +36,8 @@ export class TeamComponent {
       }
     },
     {
-      name: 'Earl Martinez',
-      role: 'Marketing Head',
+      name: 'Karunakaran Sharmila',
+      role: 'General Manager',
       image: 'assets/images/team-3.jpg',
       socialLinks: {
         facebook: '#',
@@ -48,20 +48,8 @@ export class TeamComponent {
       }
     },
     {
-      name: 'Josephine Allard',
-      role: 'Marketing Head',
-      image: 'assets/images/team-4.jpg',
-      socialLinks: {
-        facebook: '#',
-        whatsapp: '#',
-        linkedin: '#',
-        instagram: '#',
-        youtube: '#'
-      }
-    },
-    {
-      name: 'Joseph Brown',
-      role: 'Marketing Head',
+      name: 'Selvavinayagar Jinathani',
+      role: 'Accountant',
       image: 'assets/images/team-1.jpg',
       socialLinks: {
         facebook: '#',
@@ -72,32 +60,8 @@ export class TeamComponent {
       }
     },
     {
-      name: 'Nancy White',
-      role: 'Marketing Head',
-      image: 'assets/images/team-2.jpg',
-      socialLinks: {
-        facebook: '#',
-        whatsapp: '#',
-        linkedin: '#',
-        instagram: '#',
-        youtube: '#'
-      }
-    },
-    {
-      name: 'Earl Martinez',
-      role: 'Marketing Head',
-      image: 'assets/images/team-3.jpg',
-      socialLinks: {
-        facebook: '#',
-        whatsapp: '#',
-        linkedin: '#',
-        instagram: '#',
-        youtube: '#'
-      }
-    },
-    {
-      name: 'Josephine Allard',
-      role: 'Marketing Head',
+      name: 'Suthakaran Shansi',
+      role: 'Lecturer',
       image: 'assets/images/team-4.jpg',
       socialLinks: {
         facebook: '#',
@@ -107,6 +71,19 @@ export class TeamComponent {
         youtube: '#'
       }
     },
+    {
+      name: 'Daniel Denisra',
+      role: 'Lecturer',
+      image: 'assets/images/team-2.jpg',
+      socialLinks: {
+        facebook: '#',
+        whatsapp: '#',
+        linkedin: '#',
+        instagram: '#',
+        youtube: '#'
+      }
+    },
+
     // Additional team members can be added here
   ];
 

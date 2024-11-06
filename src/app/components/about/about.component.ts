@@ -10,7 +10,7 @@ export class AboutComponent {
 
 
   openWhatsapp() {
-  const phoneNumber = '+94752662427'; // Replace with your phone number
+  const phoneNumber = '+94759840406'; //  phone number
     const message = 'Hello! I have a question.'; 
     const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
 

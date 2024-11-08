@@ -7,12 +7,78 @@ import { Component } from '@angular/core';
 })
 export class ImageGalaryComponent {
   clients = [
-    { name: 'LusDen', image: 'assets/images/scull_schoolbg.jpg', quote: 'magna aliqua. Ut', feedback: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis' },
-    { name: 'Zen Court', image: 'assets/images/scull_schoolbg.jpg', quote: 'magna aliqua. Ut', feedback: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis' },
-    { name: 'Zen Court1', image: 'assets/images/scull_schoolbg.jpg', quote: 'magna aliqua. Ut', feedback: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis' },
-    { name: 'Zen Court2', image: 'assets/images/scull_schoolbg.jpg', quote: 'magna aliqua. Ut', feedback: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis' },
-    { name: 'Zen Court3', image: 'assets/images/scull_schoolbg.jpg', quote: 'magna aliqua. Ut', feedback: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis' },
-
+    { 
+      name: 'Anna Marie', 
+      image: 'assets/images/scull-0.jpg',  
+      quote: 'consequat duis aute irure dolor', 
+      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
+    },
+    { 
+      name: 'Anna Marie', 
+      image: 'assets/images/scull-8.jpg',  
+      quote: 'consequat duis aute irure dolor', 
+      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
+    },    
+    { 
+      name: 'Anna Marie', 
+      image: 'assets/images/scull-7.jpg',  
+      quote: 'consequat duis aute irure dolor', 
+      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
+    },
+    { 
+      name: 'Anna Marie', 
+      image: 'assets/images/scull-11.jpg',  
+      quote: 'consequat duis aute irure dolor', 
+      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
+    },
+    { 
+      name: 'Anna Marie', 
+      image: 'assets/images/scull-10.jpg',  
+      quote: 'consequat duis aute irure dolor', 
+      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
+    },
+    { 
+      name: 'Anna Marie', 
+      image: 'assets/images/scull-9.jpg',  
+      quote: 'consequat duis aute irure dolor', 
+      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
+    },
+    { 
+      name: 'Anna Marie', 
+      image: 'assets/images/scull-6.jpg',  
+      quote: 'consequat duis aute irure dolor', 
+      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
+    },
+    { 
+      name: 'Anna Marie', 
+      image: 'assets/images/scull-5.jpg',  
+      quote: 'consequat duis aute irure dolor', 
+      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
+    },
+    { 
+      name: 'Anna Marie', 
+      image: 'assets/images/scull-4.jpg',  
+      quote: 'consequat duis aute irure dolor', 
+      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
+    },
+    { 
+      name: 'Anna Marie', 
+      image: 'assets/images/scull-3.jpg',  
+      quote: 'consequat duis aute irure dolor', 
+      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
+    },
+    { 
+      name: 'Anna Marie', 
+      image: 'assets/images/scull-2.jpg',  
+      quote: 'consequat duis aute irure dolor', 
+      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
+    },
+    { 
+      name: 'Anna Marie', 
+      image: 'assets/images/scull-1.jpg',  
+      quote: 'consequat duis aute irure dolor', 
+      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
+    }
     // Add more clients as needed
   ];
 

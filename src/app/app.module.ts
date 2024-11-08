@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TeamComponent } from './components/team/team.component';
 import { WhyChooseUsComponent } from './components/why-choose-us/why-choose-us.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,13 +25,16 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     ImageGalaryComponent,
     FooterComponent,
     TeamComponent,
-    WhyChooseUsComponent
+    WhyChooseUsComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    FormsModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]

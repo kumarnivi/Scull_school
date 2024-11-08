@@ -56,7 +56,7 @@ export class TeamComponent {
       }
     },
     {
-      name: 'Selvavinayagar Jinathani',
+      name: 'Selvavinayagar Jinanthani ',
       role: 'Accountant',
       image: 'assets/images/team-1.jpg',
       socialLinks: {

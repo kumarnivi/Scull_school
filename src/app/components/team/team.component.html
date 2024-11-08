@@ -20,7 +20,7 @@
               <a [href]="member.socialLinks.facebook" target="_blank">
                 <i class="fab fa-facebook" aria-hidden="true"></i>
               </a>
-              <a [href]="member.socialLinks.whatsapp" target="_blank">
+              <a (click)="openWhatsapp()" target="_blank">
                 <i class="fab fa-whatsapp" aria-hidden="true"></i>
               </a>
               <a [href]="member.socialLinks.linkedin" target="_blank">
@@ -29,9 +29,9 @@
               <a [href]="member.socialLinks.instagram" target="_blank">
                 <i class="fab fa-instagram" aria-hidden="true"></i>
               </a>
-              <a [href]="member.socialLinks.youtube" target="_blank">
+              <!-- <a [href]="member.socialLinks.youtube" target="_blank">
                 <i class="fab fa-youtube" aria-hidden="true"></i>
-              </a>
+              </a> -->
             </div>
           </div>
         </div>

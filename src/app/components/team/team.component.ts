@@ -9,6 +9,14 @@ import { TeamMember } from 'src/app/interface/TeamMember';
 export class TeamComponent {
 
 
+  openWhatsapp() {
+    const phoneNumber = '+94759840406'; //  phone number
+      const message = 'Hello! I have a question.'; 
+      const whatsappUrl = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(message)}`;
+  
+      window.open(whatsappUrl, '_blank');
+     
+    }
 
   teamMembers: TeamMember[] = [
     {
@@ -16,10 +24,10 @@ export class TeamComponent {
       role: 'Managing Director',
       image: 'assets/images/team-1.jpg',
       socialLinks: {
-        facebook: '#',
+        facebook: 'https://web.facebook.com/profile.php?id=61552559295286&__tn__=-UC*F',
         whatsapp: '#',
-        linkedin: '#',
-        instagram: '#',
+        linkedin: 'https://www.linkedin.com/in/scull-soe-undefined-b23323333/',
+        instagram: 'https://www.instagram.com/scull_english/#',
         youtube: '#'
       }
     },
@@ -28,10 +36,10 @@ export class TeamComponent {
       role: 'Secretary',
       image: 'assets/images/team-2.jpg',
       socialLinks: {
-        facebook: '#',
+        facebook: 'https://web.facebook.com/profile.php?id=61552559295286&__tn__=-UC*F',
         whatsapp: '#',
-        linkedin: '#',
-        instagram: '#',
+        linkedin: 'https://www.linkedin.com/in/scull-soe-undefined-b23323333/',
+        instagram: 'https://www.instagram.com/scull_english/#',
         youtube: '#'
       }
     },
@@ -40,10 +48,10 @@ export class TeamComponent {
       role: 'General Manager',
       image: 'assets/images/team-3.jpg',
       socialLinks: {
-        facebook: '#',
+        facebook: 'https://web.facebook.com/profile.php?id=61552559295286&__tn__=-UC*F',
         whatsapp: '#',
-        linkedin: '#',
-        instagram: '#',
+        linkedin: 'https://www.linkedin.com/in/scull-soe-undefined-b23323333/',
+        instagram: 'https://www.instagram.com/scull_english/#',
         youtube: '#'
       }
     },
@@ -52,10 +60,10 @@ export class TeamComponent {
       role: 'Accountant',
       image: 'assets/images/team-1.jpg',
       socialLinks: {
-        facebook: '#',
+        facebook: 'https://web.facebook.com/profile.php?id=61552559295286&__tn__=-UC*F',
         whatsapp: '#',
-        linkedin: '#',
-        instagram: '#',
+        linkedin: 'https://www.linkedin.com/in/scull-soe-undefined-b23323333/',
+        instagram: 'https://www.instagram.com/scull_english/#',
         youtube: '#'
       }
     },
@@ -64,9 +72,9 @@ export class TeamComponent {
       role: 'Lecturer',
       image: 'assets/images/team-4.jpg',
       socialLinks: {
-        facebook: '#',
+        facebook: 'https://web.facebook.com/profile.php?id=61552559295286&__tn__=-UC*F',
         whatsapp: '#',
-        linkedin: '#',
+        linkedin: 'https://www.linkedin.com/in/scull-soe-undefined-b23323333/',
         instagram: '#',
         youtube: '#'
       }
@@ -76,10 +84,10 @@ export class TeamComponent {
       role: 'Lecturer',
       image: 'assets/images/team-2.jpg',
       socialLinks: {
-        facebook: '#',
+        facebook: 'https://web.facebook.com/profile.php?id=61552559295286&__tn__=-UC*F',
         whatsapp: '#',
-        linkedin: '#',
-        instagram: '#',
+        linkedin: 'https://www.linkedin.com/in/scull-soe-undefined-b23323333/',
+        instagram: 'https://www.instagram.com/scull_english/#',
         youtube: '#'
       }
     },

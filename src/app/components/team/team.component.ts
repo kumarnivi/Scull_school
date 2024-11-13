@@ -20,7 +20,7 @@ export class TeamComponent {
 
   teamMembers: TeamMember[] = [
     {
-      name: 'Daniel Saimanral',
+      name: 'Daniel Saimanraj',
       role: 'Managing Director',
       image: 'assets/images/team-1.jpg',
       socialLinks: {

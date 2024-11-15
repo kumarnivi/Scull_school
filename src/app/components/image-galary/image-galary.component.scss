@@ -60,6 +60,7 @@
     }
   
     .owl-carousel {
+   
       .owl-nav {
         display: flex;
         justify-content: center;
@@ -84,5 +85,11 @@
       }
     }
   }
-  
+  .owl-carousel .owl-item img {
+    object-fit: cover !important;
+  }
+
+  .detail-box img {
+    object-fit: cover;
+  }
   /* client section end */

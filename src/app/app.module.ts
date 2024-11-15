@@ -8,7 +8,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ServiceComponent } from './components/service/service.component';
-import { ImageGalaryComponent } from './components/image-galary/image-galary.component';
+import { ImageGalleryComponent } from './components/image-galary/image-galary.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TeamComponent } from './components/team/team.component';
 import { WhyChooseUsComponent } from './components/why-choose-us/why-choose-us.component';
@@ -22,7 +22,7 @@ import { FormsModule } from '@angular/forms';
     HomeComponent,
     AboutComponent,
     ServiceComponent,
-    ImageGalaryComponent,
+    ImageGalleryComponent,
     FooterComponent,
     TeamComponent,
     WhyChooseUsComponent,

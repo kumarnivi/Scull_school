@@ -1,86 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-image-galary',
   templateUrl: './image-galary.component.html',
   styleUrls: ['./image-galary.component.scss']
 })
-export class ImageGalaryComponent {
-  clients = [
-    { 
-      name: 'Anna Marie', 
-      image: 'assets/images/scull-0.jpg',  
-      quote: 'consequat duis aute irure dolor', 
-      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
-    },
-    { 
-      name: 'Anna Marie', 
-      image: 'assets/images/scull-8.jpg',  
-      quote: 'consequat duis aute irure dolor', 
-      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
-    },    
-    { 
-      name: 'Anna Marie', 
-      image: 'assets/images/scull-7.jpg',  
-      quote: 'consequat duis aute irure dolor', 
-      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
-    },
-    { 
-      name: 'Anna Marie', 
-      image: 'assets/images/scull-11.jpg',  
-      quote: 'consequat duis aute irure dolor', 
-      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
-    },
-    { 
-      name: 'Anna Marie', 
-      image: 'assets/images/scull-10.jpg',  
-      quote: 'consequat duis aute irure dolor', 
-      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
-    },
-    { 
-      name: 'Anna Marie', 
-      image: 'assets/images/scull-9.jpg',  
-      quote: 'consequat duis aute irure dolor', 
-      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
-    },
-    { 
-      name: 'Anna Marie', 
-      image: 'assets/images/scull-6.jpg',  
-      quote: 'consequat duis aute irure dolor', 
-      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
-    },
-    { 
-      name: 'Anna Marie', 
-      image: 'assets/images/scull-5.jpg',  
-      quote: 'consequat duis aute irure dolor', 
-      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
-    },
-    { 
-      name: 'Anna Marie', 
-      image: 'assets/images/scull-4.jpg',  
-      quote: 'consequat duis aute irure dolor', 
-      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
-    },
-    { 
-      name: 'Anna Marie', 
-      image: 'assets/images/scull-3.jpg',  
-      quote: 'consequat duis aute irure dolor', 
-      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
-    },
-    { 
-      name: 'Anna Marie', 
-      image: 'assets/images/scull-2.jpg',  
-      quote: 'consequat duis aute irure dolor', 
-      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
-    },
-    { 
-      name: 'Anna Marie', 
-      image: 'assets/images/scull-1.jpg',  
-      quote: 'consequat duis aute irure dolor', 
-      feedback: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.' 
-    }
-    // Add more clients as needed
-  ];
+export class ImageGalleryComponent implements OnInit {
+  clients: { image: string }[] = [];
+
 
   constructor() { }
 
@@ -107,7 +34,59 @@ export class ImageGalaryComponent {
     animateIn: 'fadeIn'
   };
 
+  showModal = false;
+  enteredCode = '';
+
   ngOnInit(): void {
+    // Load stored images from localStorage on initialization
+    const storedImages = localStorage.getItem('uploadedImages');
+    if (storedImages) {
+      this.clients = JSON.parse(storedImages);
+    }
+
   }
+
+  // Open modal for entering the code
+  openUploader() {
+    this.showModal = true;
+  }
+
+  // Close the modal
+  closeModal() {
+    this.showModal = false;
+    this.enteredCode = '';
+  }
+
+  // Validate code and open file picker if correct
+  validateCode() {
+    if (this.enteredCode === '40406') {
+      this.closeModal();
+      document.getElementById('fileInput')?.click();
+    } else {
+      alert('Incorrect code. Please try again.');
+    }
+  }
+
+  // Handle file selection
+  onFilesSelected(event: any) {
+    const files = event.target.files as FileList; // Ensure files is treated as FileList
+    if (files && files.length > 0) {
+      Array.from(files).forEach((file) => {
+        const reader = new FileReader();
+        reader.onload = () => {
+          const imageUrl = reader.result as string;
+  
+          // Add each new image to the gallery
+          this.clients.push({ image: imageUrl });
+  
+          // Save updated images to localStorage
+          localStorage.setItem('uploadedImages', JSON.stringify(this.clients));
+        };
+        reader.readAsDataURL(file);
+      });
+    }
+  }
+
+  
 
 }

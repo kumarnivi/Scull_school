@@ -1,29 +1,20 @@
 <div class="service-catalog" id="service">
   <div class="heading_container heading_center" style="margin-bottom: 25px;">
     <h2>
-      Our <span>Services</span>
+      Key <span>Services</span>
     </h2>
-    <p> Empowering your journey with a comprehensive range of English language and educational services. </p>
-</div>
-  <!-- Search and Filter Bar -->
-  <div class="search-filter-bar">
-    <input type="text" placeholder="Search services..." [(ngModel)]="searchText" />
-    <select [(ngModel)]="selectedCategory">
-      <option value="">All Categories</option>
-      <option value="English Language">English Language</option>
-      <option value="Child Care">Child Care</option>
-      <option value="ICT">ICT</option>
-      <option value="Language Classes">Language Classes</option>
-      <option value="Educational Services">Educational Services</option>
-      <!-- Add more categories as needed -->
-    </select>
+    <p> Your trusted partner for language skills, student visas, and global education success. </p>
   </div>
 
-  <!-- Service Cards -->
-  <div class="service-cards" [ngClass]="{'center-cards': filteredServices().length === 1}">
-    <div *ngFor="let service of filteredServices()" class="service-card">
-      <h3>{{ service.name }}</h3>
-      <p>{{ service.description }}</p>
-    </div>
+  <!-- Key Services List -->
+  <div class="key-services-list">
+    <ul>
+      <li>IELTS / PTE / UKVI Test Preparations</li>
+      <li>Certified Spoken English, Business English, and ICT Courses</li>
+      <li>Student Visa Counseling (UK, Canada, Australia, etc.)</li>
+      <li>University Admission Processing & Documentation</li>
+      <li>Pre-departure Orientation and Family Support</li>
+      <li>Local and International Educational Seminars</li>
+    </ul>
   </div>
 </div>
